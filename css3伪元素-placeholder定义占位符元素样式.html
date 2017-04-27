@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3伪元素-placeholder定义占位符元素样式</title>
+    <style>
+        input::-moz-placeholder{
+            /*火狐专用*/
+            color: seagreen;
+            text-indent: 2em;
+        }
+        input::-webkit-input-placeholder{
+            /*谷歌专用*/
+            color: seagreen;
+            text-indent: 2em;
+        }
+        input:-ms-input-placeholder{
+            /*IE10+专用*/
+            color: seagreen;
+            text-indent: 2em;
+        }
+    </style>
+</head>
+<body>
+<input type="text" name="" id="" placeholder="我是背景字">
+</body>
+</html>

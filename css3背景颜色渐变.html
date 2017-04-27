@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3背景颜色渐变</title>
+    <style>
+        body{
+            width:100%;
+            height:100px;
+            margin:0;
+            padding:0;
+        }
+        .box1{
+            width:50px;
+            height:700px;
+            /*这个用角度来表示渐变方向*/
+            background-image:linear-gradient(90deg,#0BBDEB,#008AC8,#0BBDEB);
+            /*还可以用关键字表示方向*/
+            float: left;
+            margin-right:10px;
+        }
+        .box2{
+              width:50px;
+              height:700px;
+              /*这个用角度来表示渐变方向*/
+              background-image:linear-gradient(to top left ,red,orange,yellow,green,blue,mediumslateblue,darkviolet);
+              /*还可以用关键字表示方向*/
+              float: left;
+          }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>

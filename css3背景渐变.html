@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景渐变</title>
+    <style>
+        .box1{
+            background-attachment:fixed;
+        }
+        .box2{
+            width:100px;
+            height:600px;
+            /*线性渐变*/
+            background-image:-moz-linear-gradient(top,red,blue);
+            background-image: -webkit-linear-gradient(top,red,blue);
+            background-image:-o-linear-gradient(top,red,blue);
+
+        }
+        .box4{
+            width:100px;
+            height:600px;
+            /*径向渐变*/
+            background-image:-webkit-radial-gradient(center center,red,blue);
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box4">
+
+</div>
+
+</body>
+</html>

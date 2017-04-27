@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css3-flex</title>
+    <style>
+        body{
+            padding:0;
+            margin:0;
+        }
+        .contain{
+            background:blue;
+            height:600px;
+            display: flex;
+
+            /*这只主轴的方向*/
+            flex-direction:row;
+            /*这只主轴上元素的换行方式*/
+            flex-wrap:nowrap;
+            /*设置主轴上的方式*/
+            justify-content: space-between;
+            /*设置交叉轴的对其方式，也就市纵轴*/
+            align-items:center;
+            /*这只多跟轴线的对其方式*/
+            align-content: flex-start;
+        }
+        .contain>div{
+            height: 100px;
+            line-height:100px;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            margin-right: 10px;
+        }
+        .contain>div:nth-child(2n+1){
+            background: rebeccapurple;
+        }
+        .contain>div:nth-child(2n){
+            background: lightseagreen;
+        }
+        .div1{
+
+            /*设置容器内元素的宽度比例大小*/
+            flex-grow:2;
+        }
+        .div2{
+            /*设置当容器的宽度缩小时，内部元素是否缩小，1为缩小，0为不缩小*/
+            flex-shrink: 0;
+            /*设置容器内元素的宽度比例大小*/
+            flex-grow:2;
+            /*设置容器内的最低宽度，也就是起始宽度，低于这个宽度就不能缩小了，但是能放大*/
+            flex-basis:200px;
+            /*设置此元素脱离父亲的约束，对齐方式任意玩*/
+            align-self: flex-end;
+        }
+        .div3{
+
+            /*设置容器内元素的宽度比例大小*/
+            flex-grow:3;
+        }
+        .div4{
+            /*设置容器内元素的宽度比例大小*/
+            flex-grow:2;
+        }
+        #div5{
+            margin-left:10px;
+            background: red;
+            /*设置容器内元素的宽度比例大小*/
+            flex-grow:2;
+            /*设置容器内的元素排列顺序*/
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+<div class="contain">
+    <div class="div1">1</div>
+    <div class="div2">2</div>
+    <div class="div3">3</div>
+    <div class="div4">4</div>
+    <div class="div5" id="div5">5</div>
+</div>
+</body>
+</html>

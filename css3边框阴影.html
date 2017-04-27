@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3边框阴影</title>
+    <style>
+        *{
+            transition: all 0.5s ease-in;
+        }
+        .box1{
+            width:500px;
+            height:500px;
+            margin: 150px auto;
+            background: blueviolet;
+            transition: all 0.5s ease-in;
+        }
+        .box1:hover{
+            box-shadow: 0 0 5px 5px darkslategray;
+        }
+        .box2{
+            width:500px;
+            height:500px;
+            margin: 150px auto;
+            background: blueviolet;
+        }
+        .box2:hover{
+            box-shadow: inset 0 0 20px 10px yellow,
+                        inset 0 0 30px 10px blue,
+                        0 0 20px 10px red,
+                        0 0 20px 30px green;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>

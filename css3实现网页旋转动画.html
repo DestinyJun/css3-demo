@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        a{
+            margin-top: 500px;
+            display: block;
+            width:500px;
+            height:50px;
+            text-decoration: none;
+            -webkit-border-radius:10px;
+            -moz-border-radius:10px;
+            border-radius:10px;
+            line-height:50px;
+            text-align:center;
+            /*-webkit-animation: myfirst 1s ease 0s infinite alternate;*/
+            -webkit-animation: myfirst 1s linear 0s infinite alternate;
+        }
+
+        @-webkit-keyframes myfirst {
+            from {
+                -webkit-box-shadow: 0 0 0 red;
+                background: yellow;
+                transform: rotate(0deg);
+            }
+            to {
+                -webkit-box-shadow: 0 0 70px blue;
+                background:greenyellow;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<a href="http://www.baidu.com">点击去我要努力</a>
+</body>
+</html>

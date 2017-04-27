@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3选择器</title>
+</head>
+<style>
+    /*css3儿子选择器*/
+    div>p{
+        color: red;
+    }
+
+    /*序选择器*/
+    ul li:first-child{
+        color: red;
+    }
+    ul li:nth-child(3){
+        color: red;
+    }
+    /*兄弟选择器*/
+    h3+p{
+        color:green;
+    }
+</style>
+<body>
+<ul>
+    <li>项目项目</li>
+    <li>项目项目</li>
+    <li>项目项目</li>
+    <li>项目项目</li>
+    <li>项目项目</li>
+</ul>
+<div>
+    <P>猜猜我是什么颜色</P>
+    <ul>
+        <li>
+            <p>我是孙子</p>
+        </li>
+    </ul>
+</div>
+<h3>哈哈哈</h3>
+<p>哈哈哈哈</p>
+<p>哈哈哈哈</p>
+<p>哈哈哈哈</p>
+<p>哈哈哈哈</p>
+<p>哈哈哈哈</p>
+<p>哈哈哈哈</p>
+<p>哈哈哈哈</p>
+<p>哈哈哈哈</p>
+<p>哈哈哈哈</p>
+<p>哈哈哈哈</p>
+</body>
+</html>

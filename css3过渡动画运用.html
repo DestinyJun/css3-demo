@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3过渡动画运用</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box1{
+            border:1px solid;
+            width:500px;
+            height:300px;
+            margin:100px auto;
+            background-image: url(../image/gougou.jpg);
+            background-repeat:no-repeat;
+            background-position: center center;
+            -webkit-background-size:contain;
+            background-size:500px 300px;
+            transition: all 0.3s linear;
+        }
+        .box1:hover{
+            background-size:520px 320px;
+        }
+        .box2{
+            border:1px solid;
+            width:500px;
+            height:300px;
+            margin:100px auto;
+            color: blue;
+            font-size: 20px;
+            text-align: center;
+            line-height:300px;
+            font-weight:bolder;
+            text-shadow: 2px 3px 5px red;
+            transition: all 0.5s linear;
+            letter-spacing: 0;
+        }
+        .box2:hover{
+            background-size:520px 320px;
+            letter-spacing: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2">
+    <p>时间过得实在太快了</p>
+</div>
+</body>
+</html>

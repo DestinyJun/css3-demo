@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3动画过度</title>
+    <style>
+        *{
+            margin:0;
+            height:0;
+            /*当前的元素只要属性变化，可以平滑的进行过度*/
+            transition: all 1s;
+        }
+        .box1{
+            width:500px;
+            height:300px;
+            background: mediumvioletred;
+            margin:100px auto;
+        }
+        .box1:hover{
+            width:600px;
+            height:400px;
+            background: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+</body>
+</html>

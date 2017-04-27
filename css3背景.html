@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3背景</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box1{
+            width:500px;
+            height:200px;
+            background: skyblue;
+            margin: 100px auto;
+            border:10px dashed red;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+        }
+        .box2{
+            width:500px;
+            height:200px;
+            background: rebeccapurple;
+            margin: 100px auto;
+            border:10px dashed red;
+            padding: 50px;
+            -webkit-background-clip: content-box;
+            background-clip: content-box;
+        }
+        .box3{
+            width:1000px;
+            height:600px;
+            background: greenyellow;
+            margin: 100px auto;
+            border:10px dashed red;
+            padding:50px;
+            background-image: url(../image/z.jpg);
+            background-repeat:no-repeat;
+            -webkit-background-size:cover;
+            background-size:cover;
+            -webkit-background-origin:border-box;
+            background-origin:content-box;
+            /*background-clip: content-box;*/
+            /*-webkit-background-origin:content-box;*/
+            /*background-origin:content-box;*/
+        }
+    </style>
+</head>
+<body>
+<div id="top"></div>
+<div id="button"></div>
+<div class="box1">字符转换</div>
+<div class="box2"></div>
+<div class="box3"></div>
+</body>
+</html>

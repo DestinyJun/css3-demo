@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3多重背景</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box1{
+            width:500px;
+            height:500px;
+            background: deepskyblue;
+            background-image: url(../image/wm4.jpeg);
+            margin: 100px auto;
+            position: relative;
+        }
+        .before,.after{
+            position: absolute;
+            width:100%;
+            height:100%;
+            padding:30px;
+            box-sizing: border-box;
+        }
+        .before{
+            background-color: white;
+            background-clip: content-box;
+        }
+        .after{
+            background-color: red;
+            background-image: url(../image/wm4.jpeg)
+                                /* ,url(../image/wm4.jpeg)*/;
+            background-repeat:no-repeat;
+            background-clip: content-box;
+            left: 100px;
+            top:100px;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="before"></div>
+    <div class="after"></div>
+</div>
+</body>
+</html>

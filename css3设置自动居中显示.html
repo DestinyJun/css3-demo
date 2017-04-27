@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8" /> 
+<title>div居中 在线演示 www.divcss5.com</title> 
+<style> 
+body{ text-align:center} 
+.div{	left: 20px;
+		right: 70px;
+		width: 1800px;
+		background:green;
+	} 
+/* css注释：为了观察效果设置宽度 边框 高度等样式 */ 
+</style> 
+</head> 
+<body> 
+<div class="div"> 
+	<div style="margin:0 auto;background:yellow;width:50px;height:1000px;">
+	</div>
+<!--@关于margin:0 @auto的你用注意事项：
+1.要给居中的元素一个宽度，否者无效。
+2.该元素一定不能浮动，否者无效。
+3.在HTML中使用<center></center>标签，需考虑好整体构架，否者全部元素都会居中的。
+4.看看上面的代码，根本没有设置DIV的宽度，如何根据宽度自适应呢？新手比较容易忽略的问题！
+
+
+-->
+</div> 
+</body> 
+</html> 

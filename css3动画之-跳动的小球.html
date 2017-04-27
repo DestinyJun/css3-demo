@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3动画运用-跳动的小球</title>
+    <style>
+        .box1{
+            width:100px;
+            height:100px;
+            margin:100px auto;
+            border-radius: 50%;
+            background: blue;
+            background-image:radial-gradient(65px at 40px 40px,rgba(0,0,0,0),rgba(0,0,0,0.6)) ;
+            animation: change 5s infinite;
+            animation-play-state: running;
+        }
+        .box2{
+
+            width:100px;
+            height:20px;
+            position: absolute;
+            top:300px;
+            left:50%;
+            margin-left:-50px;
+            border-radius: 50%;
+            background-image:radial-gradient(65px at 40px 40px,rgba(0,0,0,0),rgba(0,0,0,0.6)) ;
+        }
+        @keyframes change {
+            0%{
+                margin-top:100px;
+            }
+            50%{
+                margin-top:200px;
+            }
+            100%{
+                margin-top:100px;
+            }
+
+        }
+        button{
+            outline: none;
+            width:50px;
+            height:50px;
+            text-align: center;
+            line-height:50px;
+            font-size: 10px;
+            font-weight:bold;
+            border: none;
+            background: skyblue;
+            border-radius: 50%;
+            background-image: radial-gradient(30px at 25px 25px,rgba(0,0,0,0),rgba(0,0,0,0.6));
+        }
+        button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="box1" id="box">hahah</div>
+<div class="box2"></div>
+<button onclick="Tab();">播放</button>
+<script>
+    var play=document.getElementsByTagName("button");
+    var animation=document.getElementById("#box");
+    function Tab(){
+        alert("ok");
+        alert(animation.value);
+    }
+</script>
+</body>
+</html>
